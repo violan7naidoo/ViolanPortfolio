@@ -676,7 +676,7 @@
                         </div>
                     </div>
                     <div class="right-contact">
-                        <form method="post" name="contactForm" id="contactForm" netlify data-netlify="true">
+                        <form className='contact.wrapper' action="" method="POST" data-netlify="true" netlify>
                             <input type="hidden" name="form-name" value="contact-form" />
                             <div class="input-control i-c-2">
                                 <input type="text" name="name" required placeholder="YOUR NAME">
@@ -688,6 +688,7 @@
                             <div class="input-control">
                                 <textarea name="message" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
                             </div>
+                            <div data-netlify-recaptcha="true"></div>
                             <div class="submit-btn">
                                 <button type="submit" class="main-btn main-btn-2">
                                     <span class="btn-text">Send Message</span>
